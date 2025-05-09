@@ -64,7 +64,7 @@ DB_COLLECTION_NAME = env_vars["DB_COLLECTION_NAME"]
 
 # Create UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-style = "<style>h1 {text-align: center;} p {text-align: center;}</style>"
+style = "<style>h1 {text-align: center;} p {text-align: center;} div {text-align: center;}</style>"
 st.markdown(style, unsafe_allow_html=True)
 
 # Header image
@@ -72,11 +72,11 @@ st.image("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXGUX9lum3V
 
 # Title
 st.title("EnPani Search")
-st.markdown("Humble attempt at a mini search engine for audio recordings of [EnPani](https://m.youtube.com/playlist?list=PLhrdHlkOIj-W8D_Rj76-4Z0J9d0cjoIuI) built with [Streamlit](https://streamlit.io/)")
+st.markdown("Humble attempt at a mini search engine for [EnPani](https://m.youtube.com/playlist?list=PLhrdHlkOIj-W8D_Rj76-4Z0J9d0cjoIuI) built with [Streamlit](https://streamlit.io/) and [Milvus](https://milvus.io/)")
 
 # Search Form
 search = st.form('search_bar')
-query = search.text_input('Please type your search in English below').strip()
+query = search.text_input('Please type your search below (accepts both Tamil and English search queries)').strip()
 
 # These methods called on the form container, so they appear inside the form.
 submit = search.form_submit_button('search')
