@@ -8,6 +8,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
+- [Enhancements](#enhancements)
 - [Contributing](#contributing)
 
 
@@ -57,7 +58,14 @@ streamlit run streamlit_app.py
 ```
 
 ### Please note: 
-Upon the first startup of the app, the `load_model` method pulls the [bge_m3 model](https://milvus.io/docs/embed-with-bgm-m3.md) and can take *up to an hour* depending on internet speed. Subsequent startups will complete in less than a minute.
+Upon the first startup of the app, the `load_model` method pulls the [bge_m3 model](https://milvus.io/docs/embed-with-bgm-m3.md) and can take *up to an hour* depending on internet speed. Subsequent startups can complete in less than a minute.
+
+## Enhancements
+
+Possible future enhancements include:
+* displaying English title and/or other metadata for each Episode in search results
+* evaluating the quality of search results
+* exploring other embedding models for better performance with Tamil + English
 
 ## Contributing
 
